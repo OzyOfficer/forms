@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.collum {
+    float: left;
+    width: 330px;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 77px;
+    font-size: 30px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+button {
+    background-color: aqua;
+}
+
+.form1 input {
+    margin-bottom: 10px;
+    padding: 15px 0 13px 17px;
+    width: 94~%;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.goroda {
+    margin-bottom: 10px;
+    padding: 15px 0 13px 17px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+textarea {
+    width: 95%;
+    padding: 15px 0 15px 15px;
+    height: 130px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.knopka {
+    border-radius: 3px;
+    background-color: #12d661;
+}
+
+input[type=button] {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #12d661;
+}
