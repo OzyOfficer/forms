@@ -44,14 +44,11 @@ h2 {
     font-family: "Roboto";
 }
 
-button {
-    background-color: aqua;
-}
 
 .form1 input {
     margin-bottom: 10px;
     padding: 15px 0 13px 17px;
-    width: 94~%;
+    width: 94%;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
