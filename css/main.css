@@ -17,7 +17,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 990pxgit ;
+    max-width: 990px ;
 }
 
 .collum {
@@ -49,7 +49,7 @@ h2 {
 input[type=text] {
 
     margin-bottom: 10px;
-    padding: 15px 0 13px 17px;
+    padding: 13px 0 11px 17px;
     width: 94%;
     border-radius: 3px;
     background-color: #ffffff;
@@ -58,7 +58,7 @@ input[type=text] {
 
 .goroda {
     margin-bottom: 10px;
-    padding: 15px 0 13px 17px;
+    padding: 11px 0 11px 17px;
     width: 100%;
     border-radius: 3px;
     background-color: #ffffff;
@@ -67,8 +67,8 @@ input[type=text] {
 
 textarea {
     width: 95%;
-    padding: 15px 0 15px 15px;
-    height: 130px;
+    padding: 13px 0 11px 17px;
+    height: 104px;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
