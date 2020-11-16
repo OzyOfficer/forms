@@ -14,11 +14,11 @@
         <div class="collum">
             <div class="form1">
                 <h2>01. проста форма</h2>
-                <form action="#">
-                        <input type="text" placeholder="Введіть ім’я">
-                        <input type="text" placeholder="Email">
+                <form action="sendmail.php" method="POST">
+                        <label for=""><input class="input" type="text" placeholder="Введіть ім’я"></label>
+                        <label for=""><input class="input" type="text" placeholder="Email"></label>
                     <select class="goroda">
-                        <option value="misto">Ваше місто</option>
+                        <option value="misto" disabled selected>Ваше місто</option>
                         <option value="kiev">Київ</option>
                         <option value="lviv">Львів</option>
                         <option value="khm">Хмельницький</option>
@@ -26,7 +26,7 @@
                         
                     <textarea placeholder="Email"></textarea>
                     <label>
-                        <input class="knopka" type="button"  value="Зареєструватися">
+                        <input class="knopka" type="submit"  value="Зареєструватися">
                     </label>
                 </form>
             </div>

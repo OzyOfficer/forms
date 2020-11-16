@@ -15,9 +15,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
+input,
+select,
+textarea {
+    box-sizing: border-box;
+}
+
 .wrapper {
     margin: 0 auto;
-    max-width: 990px ;
+    max-width: 990px;
 }
 
 .collum {
@@ -46,14 +52,26 @@ h2 {
 }
 
 
-input[type=text] {
+.input {
 
     margin-bottom: 10px;
     padding: 13px 0 11px 17px;
-    width: 94%;
+    width: 100%;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
+}
+option{
+    
+}
+.input:focus,
+textarea:focus,
+.goroda:focus{
+    border: 1px solid #3e6aff;
+    border-radius: 3px;
+    box-shadow:0 0 2.5px rgba(62, 106, 255, 0.55);
+    border: 1px solid #3e6aff;
+    outline: none;
 }
 
 .goroda {
@@ -66,17 +84,20 @@ input[type=text] {
 }
 
 textarea {
-    width: 95%;
+    resize: vertical;
+    min-height: 131px;
+    width: 100%;
     padding: 13px 0 11px 17px;
     height: 104px;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
+    
 }
 
 
 
-input[type=button] {
+.knopka {
     padding: 13px 0;
     font-size: 14px;
     color: #ffffff;
@@ -87,4 +108,5 @@ input[type=button] {
     border: none;
     border-radius: 3px;
     background-color: #12d661;
+    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
 }
