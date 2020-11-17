@@ -10,6 +10,18 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../Roboto-Bold.eot');
+    src: url('../Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../Roboto-Bold.woff2') format('woff2'),
+        url('../Roboto-Bold.woff') format('woff'),
+        url('../Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -30,11 +42,13 @@ textarea {
     display: block;
     width: 330px;
 }
-.collum-small{
+
+.collum-small {
     float: left;
     width: 166px;
 }
-.collum-smal{
+
+.collum-smal {
     float: left;
     width: 255px;
 }
@@ -115,11 +129,17 @@ textarea {
     border: none;
     border-radius: 3px;
     background-color: #12d661;
+}
+
+.knopka:hover {
+    background-color: #07be51;
     filter: drop-shadow(0px 2px 2.5px rgba(8, 118, 52, 0.35));
 }
-input[type=radio]{
+
+input[type=radio] {
     float: left;
 }
+
 .poshta {
     font-size: 14px;
     color: #1f222c;
@@ -133,7 +153,22 @@ input[type=radio]{
     font-weight: 400;
     font-family: "Roboto";
 }
+
 .select-poshta,
-.select-rules{
+.select-rules {
     float: left;
+}
+
+.select-rules p {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.select-rules p:last-child {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
 }
