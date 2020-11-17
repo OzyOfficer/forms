@@ -27,9 +27,16 @@ textarea {
 }
 
 .collum {
-    display: inline-block;
-    float: left;
+    display: block;
     width: 330px;
+}
+.collum-small{
+    float: left;
+    width: 166px;
+}
+.collum-smal{
+    float: left;
+    width: 255px;
 }
 
 h1 {
@@ -42,7 +49,9 @@ h1 {
     text-align: center;
 }
 
+h3,
 h2 {
+    margin-top: 70px;
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 0px;
@@ -61,15 +70,13 @@ h2 {
     background-color: #ffffff;
     border: 1px solid #cccccc;
 }
-option{
-    
-}
+
 .input:focus,
 textarea:focus,
-.goroda:focus{
+.goroda:focus {
     border: 1px solid #3e6aff;
     border-radius: 3px;
-    box-shadow:0 0 2.5px rgba(62, 106, 255, 0.55);
+    box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
     border: 1px solid #3e6aff;
     outline: none;
 }
@@ -92,7 +99,7 @@ textarea {
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
-    
+
 }
 
 
@@ -108,5 +115,25 @@ textarea {
     border: none;
     border-radius: 3px;
     background-color: #12d661;
-    filter: drop-shadow(0px 2px 2.5px rgba(8,118,52,0.35));
+    filter: drop-shadow(0px 2px 2.5px rgba(8, 118, 52, 0.35));
+}
+input[type=radio]{
+    float: left;
+}
+.poshta {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.poshta-hide {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.select-poshta,
+.select-rules{
+    float: left;
 }

@@ -15,22 +15,47 @@
             <div class="form1">
                 <h2>01. проста форма</h2>
                 <form action="sendmail.php" method="POST">
-                        <label for=""><input class="input" type="text" placeholder="Введіть ім’я"></label>
-                        <label for=""><input class="input" type="text" placeholder="Email"></label>
+                    <label for=""><input class="input" type="text" placeholder="Введіть ім’я"></label>
+                    <label for=""><input class="input" type="email" placeholder="Email"></label>
                     <select class="goroda">
                         <option value="misto" disabled selected>Ваше місто</option>
                         <option value="kiev">Київ</option>
                         <option value="lviv">Львів</option>
                         <option value="khm">Хмельницький</option>
                     </select>
-                        
                     <textarea placeholder="Email"></textarea>
                     <label>
-                        <input class="knopka" type="submit"  value="Зареєструватися">
+                        <input class="knopka" type="submit" value="Зареєструватися">
                     </label>
                 </form>
             </div>
+            <h3>02. елементи</h3>
         </div>
+        <div class="collum-small">
+            <div class="select-poshta">
+                <form action="sendmail.php" method="POST">
+                    <p>
+                        <input id="poshta" name="radio" type="radio"><label class="poshta" for="poshta">Нова
+                            Пошта</label>
+                    </p>
+                    <p>
+                        <input id="poshta1" name="radio" type="radio"><label class="poshta" for="poshta1">Кур’єр</label>
+                    </p>
+                    <p>
+                        <input disabled selected id="poshta2" name="radio" type="radio"><label class="poshta-hide"
+                            for="poshta2">Самовивіз</label>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div class="collum-smal">
+            <div class="select-rules">
+                <form action="sendmail.php" method="POST">
+                    <p><input type="checkbox"><label>Прочитав умови договору</label></p>
+                </form>
+            </div>
+        </div>
+
     </div>
 </body>
 
