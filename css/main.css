@@ -33,6 +33,12 @@ textarea {
     box-sizing: border-box;
 }
 
+.element3 {
+
+    margin-top: 50px;
+    border-top: 1px solid #dcdcde;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 990px;
@@ -65,7 +71,7 @@ h1 {
 
 h3,
 h2 {
-    margin-top: 70px;
+    margin-top: 50px;
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 0px;
@@ -171,4 +177,118 @@ input[type=radio] {
     color: #b3b3b3;
     font-weight: 400;
     font-family: "Roboto";
+}
+
+.date {
+    float: right;
+    min-width: 473px;
+
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.mini-collum {
+    float: left;
+    width: 100px;
+}
+
+.mini-collum p {
+    margin: 0;
+    padding: 25px 20px 0 25px;
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.date label {
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.mini-collum p:last-child {
+    padding-bottom: 30px;
+}
+
+.date form {
+    padding: 24px 0 25px 0;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.date form p {
+    margin: 0;
+    padding-top: 14px;
+}
+
+.line {
+    border-top: 1px solid #dcdcde;
+    margin-top: 190px;
+}
+
+.collum-people {
+    position: relative;
+}
+
+.collum-people p {
+    margin: 0;
+}
+
+.collum-people p input {
+    visibility: hidden;
+}
+
+.collum-people .man {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 71px;
+    height: 71px;
+    background-image: url(../img/man.png);
+}
+
+.collum-people .man-collor:checked+label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70.1px;
+    background-image: url(../img/man-color.png);
+}
+
+.collum-people p .woman {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 71px;
+    height: 71px;
+    background-image: url(../img/women.png);
+}
+
+.collum-people .woman-collor:checked+label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70.1px;
+    background-image: url(../img/women-color.png);
+}
+
+
+.collum-people b {
+    display: inline-block;
+    font-size: 16px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto";
+    padding-top: 26px;
+    padding-left: 85px;
+}
+.collum-people .woman-collor:checked + .woman b,
+.collum-people .man-collor:checked + .man b{
+    color: #3e6aff;
 }
