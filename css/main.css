@@ -12,12 +12,12 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../Roboto-Bold.eot');
-    src: url('../Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../Roboto-Bold.woff2') format('woff2'),
-        url('../Roboto-Bold.woff') format('woff'),
-        url('../Roboto-Bold.ttf') format('truetype');
-    font-weight: bold;
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -41,7 +41,8 @@ textarea {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 990px;
+    max-width: 52%;
+    width: 980px;
 }
 
 .collum {
@@ -364,21 +365,23 @@ input[type=radio] {
 .parol {
     margin-left: 0;
 }
-.forma-end{
+
+.forma-end {
     position: relative;
+    position: fixed;
 }
-.end{
+
+.end {
     position: absolute;
     appearance: none;
     margin: 0;
-    
-    top: 50px;
+    top: 102px;
     right: 0;
-    
     z-index: 1;
 }
+
 .end::before,
-.end::after{
+.end::after {
     content: "";
     position: absolute;
     width: 10px;
@@ -387,17 +390,55 @@ input[type=radio] {
     transform: rotate(45deg);
     background-color: #b3b3b3;
 }
-.end::after{
+
+.end::after {
     transform: rotate(-45deg);
 }
+
 .end:hover::before,
-.end:hover::after{
+.end:hover::after {
     background-color: #949494;
 }
-.end:checked ~ .oboi, 
-.end:checked ~ h2{
+
+.end:checked~.oboi,
+.end:checked~h2 {
     display: none;
 }
-.end:checked{
+
+.end:checked {
     display: none;
+}
+
+.apple-icons {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-right: 325px;
+}
+
+.apple-icons label {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.apple-icons input{
+    appearance: none;
+}
+.apple-icons label{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 45px;
+    height: 25px;
+    background-image: url(../img/knopka.png);
+}
+.apple-icons .on-off:checked + label::before{
+    content: "";
+    position: absolute;
+    
+
+    width: 45px;
+    height: 25px;
+    background-image: url(../img/knopka-on.png);
 }
