@@ -152,7 +152,7 @@ textarea {
 }
 
 input[type=radio] {
-    float: left;
+    visibility: hidden;
 }
 
 .poshta {
@@ -172,6 +172,43 @@ input[type=radio] {
 .select-poshta,
 .select-rules {
     float: left;
+}
+.delivery2+label {
+    display: inline-block;
+    position: relative;
+}
+
+.delivery2+label::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    left: -20px;
+    top: -1px;
+    transition: all 0.5s ease;
+}
+
+.delivery2:checked+label::before {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+}
+
+.delivery2:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #3e6aff;
+    left: -15px;
+    top: 4px;
+
 }
 
 .select-rules p {
@@ -266,6 +303,7 @@ input[type=radio] {
     width: 70px;
     height: 70.1px;
     background-image: url(../img/man-color.png);
+    
 }
 
 .collum-people p .woman {
@@ -276,6 +314,7 @@ input[type=radio] {
     width: 71px;
     height: 71px;
     background-image: url(../img/women.png);
+    cursor: pointer;
 }
 
 .collum-people .woman-collor:checked+label:before {
@@ -369,6 +408,7 @@ input[type=radio] {
 .forma-end {
     position: relative;
     position: fixed;
+    max-width: 320px;
 }
 
 .end {
@@ -414,6 +454,7 @@ input[type=radio] {
     position: relative;
     float: right;
     margin-right: 325px;
+    top: -40px;
 }
 
 .apple-icons label {
@@ -422,23 +463,140 @@ input[type=radio] {
     font-weight: 400;
     font-family: "Roboto";
 }
-.apple-icons input{
+
+.apple-icons p {
+    margin: 0;
+    padding-top: 23px;
+}
+
+.apple-icons input {
     appearance: none;
 }
-.apple-icons label{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 45px;
-    height: 25px;
-    background-image: url(../img/knopka.png);
-}
-.apple-icons .on-off:checked + label::before{
-    content: "";
-    position: absolute;
-    
 
+.on-off+label {
+    display: inline-block;
+    position: relative;
+}
+
+.on-off+label::before {
+    content: "";
+    position: absolute;
     width: 45px;
     height: 25px;
-    background-image: url(../img/knopka-on.png);
+    border-radius: 16px;
+    background-color: #cfcfd1;
+    border: 1px solid #ccc;
+    left: -58px;
+    top: -3px;
+    transition: all 0.5s ease;
+}
+
+.on-off:checked+label::before {
+    background-color: #3e6aff;
+    border: 1px solid #3e6aff;
+}
+
+.on-off+label::after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 11px;
+    filter: drop-shadow(0 0 2.5px rgba(0, 0, 0, 0.5));
+    background-color: #ffffff;
+    left: -55px;
+    top: 0px;
+    transition: all 0.5s ease;
+}
+
+.on-off:checked+label::after {
+    border-radius: 11px;
+    filter: drop-shadow(0 0 2.5px rgba(0, 0, 0, 0.5));
+    background-color: #ffffff;
+    left: -35px;
+}
+
+
+
+.form-table table {
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-table td:first-child {
+    width: 160px;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.forma-table {
+    display: block;
+}
+
+.file-select+label::before {
+    content: "Виберіть файл";
+    padding: 16px 0;
+    position: absolute;
+    width: 170px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: #3e6aff;
+    color: #fff;
+    top: -17px;
+}
+
+.file-select+label {
+    position: relative;
+}
+
+.file-select {
+    position: absolute;
+    visibility: hidden;
+}
+
+.delivery3+label {
+    display: inline-block;
+    position: relative;
+}
+
+.delivery3+label::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    left: -20px;
+    top: -1px;
+    transition: all 0.5s ease;
+}
+
+.delivery3:checked+label::before {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+}
+
+.delivery3:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #3e6aff;
+    left: -15px;
+    top: 4px;
+
+}
+.wc-man,
+.wc-woman{
+    padding-left: 9px;
+    padding-right: 22px;
 }
