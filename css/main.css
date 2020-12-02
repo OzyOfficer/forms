@@ -173,6 +173,7 @@ input[type=radio] {
 .select-rules {
     float: left;
 }
+
 .delivery2+label {
     display: inline-block;
     position: relative;
@@ -210,7 +211,45 @@ input[type=radio] {
     top: 4px;
 
 }
+.checkbox{
+    visibility: hidden;
+}
+.checkbox+label {
+    display: inline-block;
+    position: relative;
+}
 
+.checkbox+label::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    left: -25px;
+    transition: all 0.5s ease;
+}
+
+.checkbox:checked+label::before {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+}
+
+.checkbox:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    border-left: 2.5px solid #244dd7;
+    border-bottom: 2.5px solid #244dd7;
+    transform: rotate(-45deg);
+    left: -21px;
+    top: 3.5px;
+}
 .select-rules p {
     font-size: 14px;
     color: #1f222c;
@@ -303,7 +342,7 @@ input[type=radio] {
     width: 70px;
     height: 70.1px;
     background-image: url(../img/man-color.png);
-    
+
 }
 
 .collum-people p .woman {
@@ -399,6 +438,48 @@ input[type=radio] {
     color: #1f222c;
     font-weight: 400;
     font-family: "Roboto";
+    padding-left: 10px;
+}
+
+.parol {
+    visibility: hidden;
+}
+
+.parol+label {
+    display: inline-block;
+    position: relative;
+}
+
+.parol+label::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    left: -15px;
+    transition: all 0.5s ease;
+}
+
+.parol:checked+label::before {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+}
+
+.parol:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    border-left: 2.5px solid #244dd7;
+    border-bottom: 2.5px solid #244dd7;
+    transform: rotate(-45deg);
+    left: -11px;
+    top: 3.5px;
 }
 
 .parol {
@@ -595,8 +676,9 @@ input[type=radio] {
     top: 4px;
 
 }
+
 .wc-man,
-.wc-woman{
+.wc-woman {
     padding-left: 9px;
     padding-right: 22px;
 }
