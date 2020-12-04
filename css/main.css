@@ -333,6 +333,7 @@ input[type=radio] {
     width: 71px;
     height: 71px;
     background-image: url(../img/man.png);
+    cursor: pointer;
 }
 
 .collum-people .man-collor:checked+label:before {
