@@ -89,9 +89,9 @@
                 <p>Дата</p>
             </div>
             <form action="sendmail.php" method="POST">
-                <input id="novunu" name="checkbox" type="checkbox"><label for="novunu">Новинки</label>
-                <input id="akcia" name="checkbox" type="checkbox"><label for="akcia">Акційні товари</label>
-                <input id="sale" name="checkbox" type="checkbox"><label for="sale">Розпродаж</label>
+                <input class="newss" id="novunu" name="checkbox" type="checkbox"><label for="novunu">Новинки</label>
+                <input class="newss" id="akcia" name="checkbox" type="checkbox"><label for="akcia">Акційні товари</label>
+                <input class="newss" id="sale" name="checkbox" type="checkbox"><label for="sale">Розпродаж</label>
                 <p><input type="date"></p>
             </form>
         </div>
@@ -130,17 +130,17 @@
 
                 <table>
                     <tr>
-                        <td>ФІО:</td>
-                        <td><label for=""><input class="input" type="text" placeholder="Введіть ім’я"></label></td>
+                        <td><label for="sad">ФІО:</label></td>
+                        <td><input  class="input" id="sad" type="text" placeholder="Введіть ім’я"></td>
                     </tr>
                     <tr>
-                        <td>Пароль:</td>
-                        <td><label for=""><input class="input" type="password"
-                                    placeholder="Введіть не менше 6 символів"></label></td>
+                        <td><label for="das">Пароль:</label></td>
+                        <td><input class="input" id="das" type="password"
+                                    placeholder="Введіть не менше 6 символів"></td>
                     </tr>
                     <tr>
-                        <td>Місто:</td>
-                        <td> <select class="goroda">
+                        <td><label id="das1">Місто:</label></td>
+                        <td> <select id="das1" class="goroda">
                                 <option value="misto" disabled selected>Ваше місто</option>
                                 <option value="kiev">Київ</option>
                                 <option value="lviv">Львів</option>

@@ -41,7 +41,6 @@ textarea {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 52%;
     width: 980px;
 }
 
@@ -264,7 +263,45 @@ input[type=radio] {
     font-weight: 400;
     font-family: "Roboto";
 }
+.newss{
+    appearance: none;
+}
+.newss+label {
+    display: inline-block;
+    position: relative;
+}
 
+.newss+label::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    left: -25px;
+    transition: all 0.5s ease;
+}
+
+.newss:checked+label::before {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+}
+
+.newss:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    border-left: 2.5px solid #244dd7;
+    border-bottom: 2.5px solid #244dd7;
+    transform: rotate(-45deg);
+    left: -21px;
+    top: 3.5px;
+}
 .date {
     float: right;
     min-width: 473px;
