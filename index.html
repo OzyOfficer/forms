@@ -51,78 +51,85 @@
                 </fieldset>
             </form>
         </div>
-        <div class="element3">
-
-        </div>
-        <h3>02. елементи</h3>
-        <div class="collum-small">
-            <div class="select-poshta">
+        <hr>
+        <div class="form-3">
+            <h3>02. елементи</h3>
+            <div class="collum-small">
+                <div class="select-poshta">
+                    <form action="sendmail.php" method="POST">
+                        <p>
+                            <input class="delivery2" id="poshta" name="radio" type="radio"><label class="poshta"
+                                for="poshta">Нова
+                                Пошта</label>
+                        </p>
+                        <p>
+                            <input class="delivery2" id="poshta1" name="radio" type="radio"><label class="poshta"
+                                for="poshta1">Кур’єр</label>
+                        </p>
+                        <p>
+                            <input class="delivery2" disabled selected id="poshta2" name="radio" type="radio"><label
+                                class="poshta-hide" for="poshta2">Самовивіз</label>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="collum-smal">
+                <div class="select-rules">
+                    <form action="sendmail.php" method="POST">
+                        <p><input class="checkbox" id="pdv" name="checkbox" type="checkbox"><label for="pdv">Прочитав
+                                умови договору</label>
+                        </p>
+                        <p><input class="checkbox" id="pdv1" name="checkbox" type="checkbox"><label for="pdv1">Згідний з
+                                ПДВ 9%</label></p>
+                        <p><input class="checkbox" disabled selected id="news" type="checkbox"><label
+                                for="news">Отримувати новини на ел.
+                                пошту</label></p>
+                    </form>
+                </div>
+            </div>
+            <div class="date">
+                <div class="mini-collum">
+                    <p>Статус</p>
+                    <p>Дата</p>
+                </div>
                 <form action="sendmail.php" method="POST">
-                    <p>
-                        <input class="delivery2" id="poshta" name="radio" type="radio"><label class="poshta" for="poshta">Нова
-                            Пошта</label>
-                    </p>
-                    <p>
-                        <input class="delivery2" id="poshta1" name="radio" type="radio"><label class="poshta" for="poshta1">Кур’єр</label>
-                    </p>
-                    <p>
-                        <input class="delivery2" disabled selected id="poshta2" name="radio" type="radio"><label class="poshta-hide"
-                            for="poshta2">Самовивіз</label>
-                    </p>
+                    <input class="newss" id="novunu" name="checkbox" type="checkbox"><label for="novunu">Новинки</label>
+                    <input class="newss" id="akcia" name="checkbox" type="checkbox"><label for="akcia">Акційні
+                        товари</label>
+                    <input class="newss" id="sale" name="checkbox" type="checkbox"><label for="sale">Розпродаж</label>
+                    <p><input type="date"></p>
                 </form>
             </div>
         </div>
-        <div class="collum-smal">
-            <div class="select-rules">
-                <form action="sendmail.php" method="POST">
-                    <p><input class="checkbox" id="pdv" name="checkbox" type="checkbox"><label for="pdv">Прочитав умови договору</label>
-                    </p>
-                    <p><input class="checkbox" id="pdv1" name="checkbox" type="checkbox"><label for="pdv1">Згідний з ПДВ 9%</label></p>
-                    <p><input class="checkbox" disabled selected id="news" type="checkbox"><label for="news">Отримувати новини на ел.
-                            пошту</label></p>
-                </form>
+        <hr>
+        <div class="form-4">
+            <h3>03. стилізовані чекбокси </h3>
+            <div class="collum-people">
+                <p>
+                    <input class="man-collor" id="man" name="radio" type="radio"><label class="man"
+                        for="man"><b>Чоловік</b></label>
+                </p>
+                <p>
+                    <input class="woman-collor" id="woman" name="radio" type="radio"><label class="woman"
+                        for="woman"><b>Жінка</b></label>
+                </p>
+            </div>
+            <div class="apple-icons">
+                <p>
+                    <input class="on-off" id="news-on" name="checkbox" type="checkbox"><label for="news-on">Отримувати
+                        новини</label>
+                </p>
+                <p>
+                    <input class="on-off" id="home" name="checkbox" type="checkbox"><label for="home">Купити додому
+                        ковбаси</label>
+                </p>
+                <p>
+                    <input class="on-off" id="light" name="checkbox" type="checkbox"><label for="light">Включити
+                        світло</label>
+                </p>
             </div>
         </div>
-        <div class="date">
-            <div class="mini-collum">
-                <p>Статус</p>
-                <p>Дата</p>
-            </div>
-            <form action="sendmail.php" method="POST">
-                <input class="newss" id="novunu" name="checkbox" type="checkbox"><label for="novunu">Новинки</label>
-                <input class="newss" id="akcia" name="checkbox" type="checkbox"><label for="akcia">Акційні товари</label>
-                <input class="newss" id="sale" name="checkbox" type="checkbox"><label for="sale">Розпродаж</label>
-                <p><input type="date"></p>
-            </form>
-        </div>
-        <div class="line">
-        </div>
-        <h3>03. стилізовані чекбокси </h3>
-        <div class="collum-people">
-            <p>
-                <input class="man-collor" id="man" name="radio" type="radio"><label class="man"
-                    for="man"><b>Чоловік</b></label>
-            </p>
-            <p>
-                <input class="woman-collor" id="woman" name="radio" type="radio"><label class="woman"
-                    for="woman"><b>Жінка</b></label>
-            </p>
-        </div>
-        <div class="apple-icons">
-            <p>
-                <input class="on-off" id="news-on" name="checkbox" type="checkbox"><label for="news-on">Отримувати
-                    новини</label>
-            </p>
-            <p>
-                <input class="on-off" id="home" name="checkbox" type="checkbox"><label for="home">Купити додому
-                    ковбаси</label>
-            </p>
-            <p>
-                <input class="on-off" id="light" name="checkbox" type="checkbox"><label for="light">Включити
-                    світло</label>
-            </p>
-        </div>
-        <div class="line"></div>
+        <hr>
         <div class="forma-table">
             <h2>04. форма таблицею</h2>
             <p><b>Заповніть усі необхідні поля</b></p>
@@ -131,15 +138,15 @@
                 <table>
                     <tr>
                         <td><label for="sad">ФІО:</label></td>
-                        <td><input  class="input" id="sad" type="text" placeholder="Введіть ім’я"></td>
+                        <td><input class="input" id="sad" type="text" placeholder="Введіть ім’я"></td>
                     </tr>
                     <tr>
                         <td><label for="das">Пароль:</label></td>
-                        <td><input class="input" id="das" type="password"
-                                    placeholder="Введіть не менше 6 символів"></td>
+                        <td><input class="input" id="das" type="password" placeholder="Введіть не менше 6 символів">
+                        </td>
                     </tr>
                     <tr>
-                        <td><label id="das1">Місто:</label></td>
+                        <td><label for="das1">Місто:</label></td>
                         <td> <select id="das1" class="goroda">
                                 <option value="misto" disabled selected>Ваше місто</option>
                                 <option value="kiev">Київ</option>
@@ -148,7 +155,7 @@
                             </select></td>
                     </tr>
                     <tr>
-                        <td>Стать:</td>
+                        <td><label for="maan">Стать:</label></td>
                         <td>
                             <input class="delivery3" id="maan" name="radio" type="radio"><label class="wc-man"
                                 for="maan">Чоловік</label>
@@ -162,8 +169,8 @@
                                 for="file">Виберіть файл</label></td>
                     </tr>
                     <tr>
-                        <td>Коментарій:</td>
-                        <td><textarea placeholder="Введіть текст повідомлення"></textarea></td>
+                        <td class="comment"><label for="textarea1">Коментарій:</label></td>
+                        <td><textarea id="textarea1" placeholder="Введіть текст повідомлення"></textarea></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -173,6 +180,53 @@
                     </tr>
                 </table>
             </div>
+        </div>
+        <hr>
+        <div class="form5-table">
+            <h2>05. форма таблицею</h2>
+            <p><b>Оформлення заявки</b></p>
+            <form action="sendmail.php" method="GET">
+                <table class="forma_start">
+                    <tr>
+                        <td class="up">Прізвище та ім’я</td>
+                        <td class="up">Ел. пошта</td>
+                        <td class="up">Телефон</td>
+                    </tr>
+                    <tr>
+                        <td><input class="input-table" type="text"></td>
+                        <td><input class="input-table" type="email"></td>
+                        <td><input class="input-table" type="number"></td>
+                    </tr>
+                </table>
+                <table class="forma_end">
+                    <tr>
+                        <td class="up">Країна</td>
+                        <td class="up">Адреса</td>
+                    </tr>
+                    <tr>
+                        <td> <select id="das1" class="country">
+                                <option value="misto" disabled selected>Ваше місто</option>
+                                <option value="kiev">Україна</option>
+                                <option value="lviv">Індонезія</option>
+                                <option value="khm">Польща</option>
+                            </select>
+                        </td>
+                        <td><input class="adressa" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="up">Місто</td>
+                        <td class="up">Будинок</td>
+                        <td class="up">Поштовий індекс</td>
+                    </tr>
+                    <tr>
+                        <td><input class="input-table" type="text"></td>
+                        <td class="problem"><input class="input-table" type="text"></td>
+                        <td><input class="input-table" type="number"></td>
+                    </tr>
+                </table>
+                <p><input id="ruless" type="checkbox"><label for="ruless">Я погоджуюсь з правилами оплати та доставки товару</label></p>
+            </form>
+            <hr>
         </div>
     </div>
 </body>

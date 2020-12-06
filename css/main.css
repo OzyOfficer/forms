@@ -27,6 +27,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
+hr {
+    display: block;
+    border: none;
+    height: 1px;
+    background-color: #dcdcde;
+    color: #dcdcde;
+    margin-top: 50px;
+}
+
+.form-3,
+.form-4 {
+    display: inline-block;
+    width: 100%;
+}
+
 input,
 select,
 textarea {
@@ -100,7 +115,9 @@ h2 {
 .input:focus,
 textarea:focus,
 .goroda:focus,
-.login:focus {
+.login:focus,
+.input-table:focus,
+.country:focus{
     border: 1px solid #3e6aff;
     border-radius: 3px;
     box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
@@ -130,7 +147,10 @@ textarea {
 
 }
 
-
+.comment {
+    padding-top: 0;
+    vertical-align: top;
+}
 
 .knopka {
     margin-top: 10px;
@@ -211,9 +231,11 @@ input[type=radio] {
     top: 4px;
 
 }
-.checkbox{
+
+.checkbox {
     visibility: hidden;
 }
+
 .checkbox+label {
     display: inline-block;
     position: relative;
@@ -250,6 +272,7 @@ input[type=radio] {
     left: -21px;
     top: 3.5px;
 }
+
 .select-rules p {
     font-size: 14px;
     color: #1f222c;
@@ -263,9 +286,11 @@ input[type=radio] {
     font-weight: 400;
     font-family: "Roboto";
 }
-.newss{
+
+.newss {
     appearance: none;
 }
+
 .newss+label {
     display: inline-block;
     position: relative;
@@ -279,7 +304,7 @@ input[type=radio] {
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
-    left: -25px;
+    left: -8px;
     transition: all 0.5s ease;
 }
 
@@ -299,9 +324,10 @@ input[type=radio] {
     border-left: 2.5px solid #244dd7;
     border-bottom: 2.5px solid #244dd7;
     transform: rotate(-45deg);
-    left: -21px;
+    left: -4px;
     top: 3.5px;
 }
+
 .date {
     float: right;
     min-width: 473px;
@@ -327,7 +353,8 @@ input[type=radio] {
 
 .date label {
     display: inline-block;
-    margin-right: 24px;
+
+    padding: 0 18px;
 }
 
 .mini-collum p:last-child {
@@ -441,6 +468,7 @@ input[type=radio] {
     filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
     background-color: #fafafa;
     border: 1px solid #e6e6e6;
+
 }
 
 .oboi a {
@@ -529,6 +557,7 @@ input[type=radio] {
     position: relative;
     position: fixed;
     max-width: 320px;
+    z-index: 2;
 }
 
 .end {
@@ -572,8 +601,7 @@ input[type=radio] {
 .apple-icons {
     display: inline-block;
     position: relative;
-    float: right;
-    margin-right: 325px;
+    right: -510px;
     top: -40px;
 }
 
@@ -720,4 +748,49 @@ input[type=radio] {
 .wc-woman {
     padding-left: 9px;
     padding-right: 22px;
+}
+
+/* Форма 5 */
+.polosa{
+    display: inline-block;
+    position: relative;
+    top: 200px;
+    height: 1px;
+    width: 100%;
+    background-color: #dcdcde;
+}
+.forma_start,
+.form_end{
+    width: 680px;
+}
+.up {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.input-table{
+    margin-bottom: 10px;
+    padding: 13px 0 11px 17px;
+    width: 220px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+.adressa{
+    margin-bottom: 10px;
+    padding: 13px 0 11px 17px;
+    width: 450px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+.country {
+    margin-bottom: 10px;
+    padding: 11px 0 11px 17px;
+    width: 220px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
 }
