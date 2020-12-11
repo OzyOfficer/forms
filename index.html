@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -16,12 +16,12 @@
                 <h2>01. проста форма</h2>
                 <form action="php/index.php" method="POST">
                     <label for=""><input class="input" name="imy" type="text" placeholder="Введіть ім’я"></label>
-                    <label for=""><input class="input" name="name" type="email" placeholder="Email"></label>
+                    <label for=""><input class="input" name="maill" type="email" placeholder="Email"></label>
                     <select name="city" class="goroda">
                         <option value="misto" disabled selected>Ваше місто</option>
-                        <option value="kiev">Київ</option>
-                        <option value="lviv">Львів</option>
-                        <option value="khm">Хмельницький</option>
+                        <option value="Київ">Київ</option>
+                        <option value="Львів">Львів</option>
+                        <option value="Хмельницький">Хмельницький</option>
                     </select>
                     <textarea placeholder="Email"></textarea>
                     <label>
@@ -228,6 +228,12 @@
                 <p><input id="ruless" type="checkbox"><label for="ruless">Я погоджуюсь з правилами оплати та доставки товару</label></p>
             </form>
             <hr>
+            <label>
+                <input class="knopka-nazad" type="submit" value="Повернутися назад">
+            </label>
+            <label>
+                <input class="knopka-zakaz" type="submit" value="Оформити покупку">
+            </label>
         </div>
     </div>
 </body>

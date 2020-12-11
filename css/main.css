@@ -25,6 +25,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    height: 100%;
 }
 
 hr {
@@ -308,7 +309,7 @@ input[type=radio] {
     border: 1px solid #cccccc;
     left: -8px;
     transition: all 0.5s ease;
-    
+
 }
 
 .newss:checked+label::before {
@@ -573,7 +574,7 @@ input[type=radio] {
 
 .end+label {
     position: absolute;
-    
+
 }
 
 .end+label::before,
@@ -588,7 +589,7 @@ input[type=radio] {
     transform: rotate(45deg);
     background-color: #b3b3b3;
     z-index: 1;
-    
+
 }
 
 .end+label::after {
@@ -599,7 +600,7 @@ input[type=radio] {
 .end+label:hover::before,
 .end+label:hover::after {
     background-color: #949494;
-    
+
 }
 
 .end:checked~.oboi,
@@ -650,14 +651,14 @@ input[type=radio] {
     left: -58px;
     top: -3px;
     transition: all 0.5s ease;
-    
-    
+
+
 }
 
 .on-off:checked+label::before {
     background-color: #3e6aff;
     border: 1px solid #3e6aff;
-    
+
 }
 
 .on-off+label::after {
@@ -722,7 +723,7 @@ input[type=radio] {
 .file-select {
     position: absolute;
     visibility: hidden;
-    
+
 }
 
 .delivery3+label {
@@ -780,9 +781,10 @@ input[type=radio] {
 }
 
 .forma_start,
-.form_end {
-    width: 680px;
+.forma_end{
+    width: 100%;
 }
+
 
 .up {
     font-size: 13px;
@@ -803,7 +805,7 @@ input[type=radio] {
 .adressa {
     margin-bottom: 10px;
     padding: 13px 0 11px 17px;
-    width: 450px;
+    width: 100%;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
@@ -819,7 +821,7 @@ input[type=radio] {
 }
 
 .table-line {
-    width: 680px;
+    width: 100%;
     margin: 25px 0;
 }
 
@@ -832,8 +834,60 @@ input[type=radio] {
     background-color: #ffffff;
     border: 1px solid #cccccc;
 }
-.calendar:hover{
+
+.calendar:hover {
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #3e6aff;
+}
+.form5-table{
+    margin: 0;
+    padding: 0;
+    width: 680px;
+}
+.form5-table p label{
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.knopka-nazad {
+    margin-top: 28px;
+    padding: 13px 0;
+    font-size: 14px;
+    color: #6e6f77;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    width: 180px;
+    height: 43px;
+    border: 1px solid #85868d;
+    border-radius: 3px;
+    background-color: #ffffff;
+    cursor: pointer;
+    float: left;
+}
+.knopka-nazad:hover{
+    background-color: #85868d;
+    color: #ffffff;
+}
+.knopka-zakaz{
+    margin-top: 28px;
+    padding: 13px 0;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    width: 180px;
+    height: 43px;
+    border: none;
+    border-radius: 3px;
+    background-color: #12d661;
+    cursor: pointer;
+    float: right;
+}
+.knopka-zakaz:hover{
+    box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
+    background-color: #07be51;
 }
