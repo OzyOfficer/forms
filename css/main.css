@@ -118,7 +118,7 @@ textarea:focus,
 .login:focus,
 .input-table:focus,
 .country:focus,
-.adressa:focus{
+.adressa:focus {
     border: 1px solid #3e6aff;
     border-radius: 3px;
     box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
@@ -165,6 +165,7 @@ textarea {
     border: none;
     border-radius: 3px;
     background-color: #12d661;
+    cursor: pointer;
 }
 
 .knopka:hover {
@@ -307,6 +308,7 @@ input[type=radio] {
     border: 1px solid #cccccc;
     left: -8px;
     transition: all 0.5s ease;
+    
 }
 
 .newss:checked+label::before {
@@ -567,27 +569,37 @@ input[type=radio] {
     margin: 0;
     top: 102px;
     right: 0;
-    z-index: 1;
 }
 
-.end::before,
-.end::after {
+.end+label {
+    position: absolute;
+    
+}
+
+.end+label::before,
+.end+label::after {
     content: "";
     position: absolute;
+    cursor: pointer;
     width: 10px;
     height: 2px;
-    right: 10px;
+    top: 104px;
+    left: 300px;
     transform: rotate(45deg);
     background-color: #b3b3b3;
+    z-index: 1;
+    
 }
 
-.end::after {
+.end+label::after {
     transform: rotate(-45deg);
+    cursor: pointer;
 }
 
-.end:hover::before,
-.end:hover::after {
+.end+label:hover::before,
+.end+label:hover::after {
     background-color: #949494;
+    
 }
 
 .end:checked~.oboi,
@@ -595,7 +607,7 @@ input[type=radio] {
     display: none;
 }
 
-.end:checked {
+.end:checked+label {
     display: none;
 }
 
@@ -638,11 +650,14 @@ input[type=radio] {
     left: -58px;
     top: -3px;
     transition: all 0.5s ease;
+    
+    
 }
 
 .on-off:checked+label::before {
     background-color: #3e6aff;
     border: 1px solid #3e6aff;
+    
 }
 
 .on-off+label::after {
@@ -663,6 +678,7 @@ input[type=radio] {
     filter: drop-shadow(0 0 2.5px rgba(0, 0, 0, 0.5));
     background-color: #ffffff;
     left: -35px;
+    cursor: pointer;
 }
 
 
@@ -687,7 +703,7 @@ input[type=radio] {
 
 .file-select+label::before {
     content: "Виберіть файл";
-    padding: 16px 0;
+    padding: 14px 0;
     position: absolute;
     width: 170px;
     text-align: center;
@@ -696,6 +712,7 @@ input[type=radio] {
     background-color: #3e6aff;
     color: #fff;
     top: -17px;
+    cursor: pointer;
 }
 
 .file-select+label {
@@ -705,6 +722,7 @@ input[type=radio] {
 .file-select {
     position: absolute;
     visibility: hidden;
+    
 }
 
 .delivery3+label {
@@ -752,7 +770,7 @@ input[type=radio] {
 }
 
 /* Форма 5 */
-.polosa{
+.polosa {
     display: inline-block;
     position: relative;
     top: 200px;
@@ -760,10 +778,12 @@ input[type=radio] {
     width: 100%;
     background-color: #dcdcde;
 }
+
 .forma_start,
-.form_end{
+.form_end {
     width: 680px;
 }
+
 .up {
     font-size: 13px;
     color: #b3b3b3;
@@ -771,7 +791,7 @@ input[type=radio] {
     font-family: "Roboto";
 }
 
-.input-table{
+.input-table {
     margin-bottom: 10px;
     padding: 13px 0 11px 17px;
     width: 220px;
@@ -779,7 +799,8 @@ input[type=radio] {
     background-color: #ffffff;
     border: 1px solid #cccccc;
 }
-.adressa{
+
+.adressa {
     margin-bottom: 10px;
     padding: 13px 0 11px 17px;
     width: 450px;
@@ -787,6 +808,7 @@ input[type=radio] {
     background-color: #ffffff;
     border: 1px solid #cccccc;
 }
+
 .country {
     margin-bottom: 10px;
     padding: 11px 0 11px 17px;
@@ -795,7 +817,23 @@ input[type=radio] {
     background-color: #ffffff;
     border: 1px solid #cccccc;
 }
-.table-line{
+
+.table-line {
     width: 680px;
     margin: 25px 0;
+}
+
+.calendar {
+    width: 148px;
+    height: 41px;
+    outline: none;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+.calendar:hover{
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
 }

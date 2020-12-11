@@ -14,10 +14,10 @@
         <div class="collum">
             <div class="form1">
                 <h2>01. проста форма</h2>
-                <form action="sendmail.php" method="POST">
-                    <label for=""><input class="input" type="text" placeholder="Введіть ім’я"></label>
-                    <label for=""><input class="input" type="email" placeholder="Email"></label>
-                    <select class="goroda">
+                <form action="php/index.php" method="POST">
+                    <label for=""><input class="input" name="imy" type="text" placeholder="Введіть ім’я"></label>
+                    <label for=""><input class="input" name="name" type="email" placeholder="Email"></label>
+                    <select name="city" class="goroda">
                         <option value="misto" disabled selected>Ваше місто</option>
                         <option value="kiev">Київ</option>
                         <option value="lviv">Львів</option>
@@ -35,7 +35,7 @@
 
             <form class="forma-end" action="sendmail.php" method="POST">
 
-                <input class="end" type="checkbox">
+                <input class="end" id="ends" type="checkbox"><label for="ends" ></label>
                 <h2>06. фіксована форма</h2>
                 <fieldset class="oboi">
                     <p>Логін</p>
@@ -75,7 +75,7 @@
             </div>
             <div class="collum-smal">
                 <div class="select-rules">
-                    <form action="sendmail.php" method="POST">
+                    <form action="index.php" method="POST">
                         <p><input class="checkbox" id="pdv" name="checkbox" type="checkbox"><label for="pdv">Прочитав
                                 умови договору</label>
                         </p>
@@ -97,7 +97,7 @@
                     <input class="newss" id="akcia" name="checkbox" type="checkbox"><label for="akcia">Акційні
                         товари</label>
                     <input class="newss" id="sale" name="checkbox" type="checkbox"><label for="sale">Розпродаж</label>
-                    <p><input type="date"></p>
+                    <p><input class="calendar" type="date"></p>
                 </form>
             </div>
         </div>
@@ -212,7 +212,7 @@
                                 <option value="khm">Польща</option>
                             </select>
                         </td>
-                        <td><input class="adressa" type="text"></td>
+                        <td colspan="2"><input class="adressa" type="text"></td>
                     </tr>
                     <tr>
                         <td class="up">Місто</td>
