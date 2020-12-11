@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css"/>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                         <option value="Львів">Львів</option>
                         <option value="Хмельницький">Хмельницький</option>
                     </select>
-                    <textarea placeholder="Email"></textarea>
+                    <textarea name="koment" placeholder="Коментарій"></textarea>
                     <label>
                         <input class="knopka" type="submit" value="Зареєструватися">
                     </label>
@@ -31,11 +31,8 @@
             </div>
         </div>
         <div class="collumm">
-
-
             <form class="forma-end" action="sendmail.php" method="POST">
-
-                <input class="end" id="ends" type="checkbox"><label for="ends" ></label>
+                <input class="end" id="ends" type="checkbox"><label for="ends"></label>
                 <h2>06. фіксована форма</h2>
                 <fieldset class="oboi">
                     <p>Логін</p>
@@ -56,7 +53,7 @@
             <h3>02. елементи</h3>
             <div class="collum-small">
                 <div class="select-poshta">
-                    <form action="sendmail.php" method="POST">
+                    <form action="form2.php" method="POST">
                         <p>
                             <input class="delivery2" id="poshta" name="radio" type="radio"><label class="poshta"
                                 for="poshta">Нова
@@ -134,51 +131,52 @@
             <h2>04. форма таблицею</h2>
             <p><b>Заповніть усі необхідні поля</b></p>
             <div class="form-table">
-
-                <table>
-                    <tr>
-                        <td><label for="sad">ФІО:</label></td>
-                        <td><input class="input" id="sad" type="text" placeholder="Введіть ім’я"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="das">Пароль:</label></td>
-                        <td><input class="input" id="das" type="password" placeholder="Введіть не менше 6 символів">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="das1">Місто:</label></td>
-                        <td> <select id="das1" class="goroda">
-                                <option value="misto" disabled selected>Ваше місто</option>
-                                <option value="kiev">Київ</option>
-                                <option value="lviv">Львів</option>
-                                <option value="khm">Хмельницький</option>
-                            </select></td>
-                    </tr>
-                    <tr>
-                        <td><label for="maan">Стать:</label></td>
-                        <td>
-                            <input class="delivery3" id="maan" name="radio" type="radio"><label class="wc-man"
-                                for="maan">Чоловік</label>
-                            <input class="delivery3" id="wooman" name="radio" type="radio"><label class="wc-woman"
-                                for="wooman">Жінка</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Фото:</td>
-                        <td><input class="file-select" id="file" type="file" value="Виберіть файл"><label
-                                for="file">Виберіть файл</label></td>
-                    </tr>
-                    <tr>
-                        <td class="comment"><label for="textarea1">Коментарій:</label></td>
-                        <td><textarea id="textarea1" placeholder="Введіть текст повідомлення"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><label>
-                                <input class="knopka" type="submit" value="Зареєструватися">
-                            </label></td>
-                    </tr>
-                </table>
+                <form action="php/form2.php" method="POST">
+                    <table>
+                        <tr>
+                            <td><label for="sad">ФІО:</label></td>
+                            <td><input class="input" id="sad" name="name" type="text" placeholder="Введіть ім’я"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="das">Пароль:</label></td>
+                            <td><input class="input" id="das" name="pasword" type="password" placeholder="Введіть не менше 6 символів">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="das1">Місто:</label></td>
+                            <td> <select name="city" id="das1" class="goroda">
+                                    <option value="misto" disabled selected>Ваше місто</option>
+                                    <option value="kiev">Київ</option>
+                                    <option value="lviv">Львів</option>
+                                    <option value="khm">Хмельницький</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="maan">Стать:</label></td>
+                            <td>
+                                <input class="delivery3" id="maan" name="man" value="Чоловік" type="radio"><label class="wc-man"
+                                    for="maan">Чоловік</label>
+                                <input class="delivery3" id="wooman" name="man" value="Жінка" type="radio"><label class="wc-woman"
+                                    for="wooman">Жінка</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Фото:</td>
+                            <td><input class="file-select" id="file" name="document" type="file" value="Виберіть файл"><label
+                                    for="file">Виберіть файл</label></td>
+                        </tr>
+                        <tr>
+                            <td class="comment"><label for="textarea1">Коментарій:</label></td>
+                            <td><textarea name="koment" id="textarea1" placeholder="Введіть текст повідомлення"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><label>
+                                    <input class="knopka" type="submit" value="Зареєструватися">
+                                </label></td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
         <hr>
@@ -225,7 +223,8 @@
                         <td><input class="input-table" type="number"></td>
                     </tr>
                 </table>
-                <p><input id="ruless" type="checkbox"><label for="ruless">Я погоджуюсь з правилами оплати та доставки товару</label></p>
+                <p><input id="ruless" type="checkbox"><label for="ruless">Я погоджуюсь з правилами оплати та доставки
+                        товару</label></p>
             </form>
             <hr>
             <label>
