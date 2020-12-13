@@ -128,12 +128,30 @@ textarea:focus,
 }
 
 .goroda {
+    appearance: none;
     margin-bottom: 10px;
     padding: 11px 0 11px 17px;
     width: 100%;
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
+}
+.city5{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.city5::before {
+    content: '';
+    position: absolute;
+    border: 4px solid transparent;
+    border-right-color: #000;
+    border-bottom-color: #000;
+    right: 14px;
+    top: 15px;
+    transform: rotate(45deg);
+    z-index: 0;
 }
 
 textarea {
@@ -812,6 +830,7 @@ input[type=radio] {
 }
 
 .country {
+    appearance: none;
     margin-bottom: 10px;
     padding: 11px 0 11px 17px;
     width: 220px;
@@ -826,6 +845,7 @@ input[type=radio] {
 }
 
 .calendar {
+    appearance: none;
     width: 148px;
     height: 41px;
     outline: none;
@@ -833,6 +853,7 @@ input[type=radio] {
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
+    
 }
 
 .calendar:hover {

