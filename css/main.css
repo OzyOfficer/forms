@@ -24,6 +24,7 @@
 
 body {
     margin: 0;
+    margin-bottom: 220px;
     font-family: Arial, sans-serif;
     height: 100%;
 }
@@ -136,7 +137,8 @@ textarea:focus,
     background-color: #ffffff;
     border: 1px solid #cccccc;
 }
-.city5{
+
+.city5 {
     display: inline-block;
     position: relative;
     width: 100%;
@@ -732,7 +734,14 @@ input[type=radio] {
     color: #fff;
     top: -17px;
     cursor: pointer;
+    font-family: "Roboto";
+    font-size: 14px;
 }
+.file-select+label:hover::before {
+    box-shadow: (0px 2px 2.5px rgba(15, 40, 126, 0.35));
+    background-color: #2857f4;
+}
+
 
 .file-select+label {
     position: relative;
@@ -799,7 +808,7 @@ input[type=radio] {
 }
 
 .forma_start,
-.forma_end{
+.forma_end {
     width: 100%;
 }
 
@@ -853,7 +862,7 @@ input[type=radio] {
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
-    
+
 }
 
 .calendar:hover {
@@ -861,16 +870,60 @@ input[type=radio] {
     background-color: #ffffff;
     border: 1px solid #3e6aff;
 }
-.form5-table{
+
+.form5-table {
     margin: 0;
     padding: 0;
     width: 680px;
 }
-.form5-table p label{
+
+.form5-table p label {
     font-size: 14px;
     color: #1f222c;
     font-weight: 400;
     font-family: "Roboto";
+    padding-left: 12px;
+}
+.rul {
+    visibility: hidden;
+}
+
+.rul+label {
+    display: inline-block;
+    position: relative;
+}
+
+.rul+label::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    left: -15px;
+    transition: all 0.5s ease;
+    top: -2px;
+}
+
+.rul:checked+label::before {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #3e6aff;
+}
+
+.rul:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    border-left: 2.5px solid #244dd7;
+    border-bottom: 2.5px solid #244dd7;
+    transform: rotate(-45deg);
+    left: -11px;
+    top: 2.5px;
 }
 .knopka-nazad {
     margin-top: 28px;
@@ -888,11 +941,13 @@ input[type=radio] {
     cursor: pointer;
     float: left;
 }
-.knopka-nazad:hover{
+
+.knopka-nazad:hover {
     background-color: #85868d;
     color: #ffffff;
 }
-.knopka-zakaz{
+
+.knopka-zakaz {
     margin-top: 28px;
     padding: 13px 0;
     font-size: 14px;
@@ -908,7 +963,8 @@ input[type=radio] {
     cursor: pointer;
     float: right;
 }
-.knopka-zakaz:hover{
-    box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
+
+.knopka-zakaz:hover {
+    box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
     background-color: #07be51;
 }
