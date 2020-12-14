@@ -130,6 +130,7 @@ textarea:focus,
 
 .goroda {
     appearance: none;
+    -webkit-appearance: none;
     margin-bottom: 10px;
     padding: 11px 0 11px 17px;
     width: 100%;
@@ -312,6 +313,8 @@ input[type=radio] {
 
 .newss {
     appearance: none;
+    visibility: hidden;
+    position: absolute;
 }
 
 .newss+label {
@@ -327,7 +330,7 @@ input[type=radio] {
     border-radius: 3px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
-    left: -8px;
+    left: 0;
     transition: all 0.5s ease;
 
 }
@@ -377,8 +380,7 @@ input[type=radio] {
 
 .date label {
     display: inline-block;
-
-    padding: 0 18px;
+    padding: 0 21px;
 }
 
 .mini-collum p:last-child {
@@ -653,6 +655,8 @@ input[type=radio] {
 
 .apple-icons input {
     appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
 }
 
 .on-off+label {
