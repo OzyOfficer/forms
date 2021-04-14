@@ -147,8 +147,8 @@ textarea:focus,
     display: inline-block;
     position: relative;
     width: 100%;
+    z-index: 1;
 }
-
 .city5:before {
     content: '';
     position: absolute;
@@ -847,6 +847,7 @@ input[type=radio] {
 }
 
 .country {
+    position: relative;
     appearance: none;
     -webkit-appearance: none;
     margin-bottom: 10px;
@@ -854,6 +855,8 @@ input[type=radio] {
     width: 220px;
     border-radius: 3px;
     border: 1px solid #cccccc;
+    background-color: transparent;
+    z-index: 1;
 }
 
 .table-line {
